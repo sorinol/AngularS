@@ -1,0 +1,4 @@
+<div class="list-container">
+  <app-preview-faculty *ngFor="let fac of faculties" [faculty]="fac"
+                       (click)="onSelectFaculty(fac.id)"></app-preview-faculty>
+</div>

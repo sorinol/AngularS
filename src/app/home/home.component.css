@@ -1,0 +1,67 @@
+.card-format {
+  margin: 16px auto;
+  width: 90%;
+}
+
+
+.div-logo {
+  display: flex;
+}
+
+.img-logo {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.title-p {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+
+
+.example-button-row {
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.motto{
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  font-family: 'Festive',cursive ;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  color: yellow;
+  /*animation-name: example;*/
+  /*animation-duration: 4s;*/
+}
+.world{
+  /*padding-top: 50px;*/
+  /*padding-right: 30px;*/
+  /*padding-bottom: 50px;*/
+  /*padding-left: 80px;*/
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  color: darkred;
+  margin-top: 150px;
+}
+
+
+
+

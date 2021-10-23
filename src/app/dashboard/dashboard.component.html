@@ -1,0 +1,17 @@
+<app-navigation-toolbar></app-navigation-toolbar>
+
+<app-add-edit-delete-client [client]="selectedClient"></app-add-edit-delete-client>
+
+<app-list-clients (onSelect)="onReceiveClient($event)"></app-list-clients>
+
+<app-add-edit-delete-faculty [faculty]="selectedFaculty"></app-add-edit-delete-faculty>
+
+<app-list-faculties (onSelect)="onReceiveFaculty($event)"></app-list-faculties>
+
+<app-add-edit-delete-city [city]="selectedCity"></app-add-edit-delete-city>
+
+<app-list-cities (onSelect)="onReceiveCity($event)"></app-list-cities>
+
+<app-add-edit-delete-university [university]="selectedUniversity"></app-add-edit-delete-university>
+
+<app-list-universities (onSelect)="onReceiveUniversity($event)"></app-list-universities>

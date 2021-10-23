@@ -1,0 +1,18 @@
+<div>
+
+</div>
+
+<mat-card class="card-container">
+  <form [formGroup]="form" class="form-container">
+    <mat-form-field appearance="standard">
+      <mat-label>City name</mat-label>
+      <input matInput placeholder="Placeholder" formControlName="name">
+    </mat-form-field>
+    <mat-form-field appearance="standard"></mat-form-field>
+
+  </form>
+  <mat-card-actions>
+    <button mat-button (click)="onSubmit()">SAVE</button>
+    <button mat-button>DELETE</button>
+  </mat-card-actions>
+</mat-card>

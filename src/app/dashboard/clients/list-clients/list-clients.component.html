@@ -1,0 +1,6 @@
+<div class="list-container">
+  <app-preview-client *ngFor="let cli of clients" [client]="cli"
+                      (click)="onSelectClient(cli.id)"></app-preview-client>
+</div>
+
+
