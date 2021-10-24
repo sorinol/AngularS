@@ -1,9 +1,9 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Constants} from "../../../utils/constants";
-import {UniversityService} from "../../universities/university.service";
+import {Constants} from "../../../../utils/constants";
+import {UniversityService} from "../../university.service";
 import {FormBuilder, FormGroup} from "@angular/forms";
-import {CityModel} from "../../../models/city-model";
-import {AdmittanceModel} from "../../../models/admittance-model";
+import {CityModel} from "../../../../models/city-model";
+import {AdmittanceModel} from "../../../../models/admittance-model";
 
 @Component({
   selector: 'app-add-edit-delete-city',

@@ -9,6 +9,9 @@ import {Router} from "@angular/router";
   styleUrls: ['./navigation-toolbar.component.css']
 })
 export class NavigationToolbarComponent implements OnInit {
+
+
+  isAuthenticated: boolean | undefined;
   showCityList: boolean= false;
   currentUser: UserModel | undefined;
   constructor(private userService: UserService,

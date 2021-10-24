@@ -1,0 +1,25 @@
+.list-container {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text{
+  font-size: 50px;
+}
+
+.img {
+  background-position: center;
+
+
+
+}
+
+.div{
+  background-size: auto;
+}
+
+
+
+
