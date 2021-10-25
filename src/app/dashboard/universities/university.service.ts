@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import {UniversityModel} from "../../models/university-model";
 import {CityModel} from "../../models/city-model";
-import {Constants} from "../../utils/constants";
 import {HttpClient} from "@angular/common/http";
 import {environment} from "../../../environments/environment";
+
 
 @Injectable({
   providedIn: 'root'
@@ -35,9 +35,9 @@ export class UniversityService {
     return this.http.delete(`${environment.apiUrl}/university/deleteUniversity/${universityId}`);
   }
 
-  public get(){
+  public getByCityId(cityId: number){
 
-    return this.http.get(`${environment.apiUrl}/university/getUniversities`);
+    return this.http.get(`${environment.apiUrl}/university/getUniversitiesByCityId/${cityId}`);
   }
 
   public getById(universityId: number) {

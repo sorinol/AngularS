@@ -1,6 +1,44 @@
+.back{
+  background-color: olivedrab;
+  background-size: 400px;
+}
+
 .list-container {
   margin: auto;
-  width: 90%;
   display: flex;
   flex-wrap: wrap;
+  align-content: center;
 }
+
+.header {
+  background-color: cornsilk;
+  padding: 30px;
+  text-align: center;
+  font-family: "Monotype Corsiva", cursive;
+  font-size: 50px;
+  color: olivedrab;
+}
+
+.mat-card-content{
+  color: black;
+}
+
+.article, p{
+  float: left;
+  padding: 20px;
+  width: auto;
+  height: auto;
+  color:black;
+  overflow-wrap: break-word;
+  resize: both;
+  background-color: olivedrab;
+
+}
+
+.button{
+  color: black;
+}
+
+
+
+

@@ -2,6 +2,7 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {UniversityService} from "../university.service";
 import {UniversityModel} from "../../../models/university-model";
 import {Router} from "@angular/router";
+import {CityModel} from "../../../models/city-model";
 
 @Component({
   selector: 'app-list-universities',
@@ -12,6 +13,8 @@ export class ListUniversitiesComponent implements OnInit {
 
   @Output() onSelect: EventEmitter<number>;
   universities: Array<UniversityModel> = [];
+  selectedUniversity: any;
+
 
   constructor(private universitiesService: UniversityService, private router: Router) {
     this.onSelect = new EventEmitter();
@@ -19,7 +22,8 @@ export class ListUniversitiesComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.universitiesService.get().subscribe((response: any) => {
+
+    this.universitiesService.getByCityId(1).subscribe((response: any) => {
         console.log(response);
         this.universities = response;
       },
@@ -29,9 +33,14 @@ export class ListUniversitiesComponent implements OnInit {
       });
   }
 
-  onSelectUniversity(universityId: number){
-    this.onSelect.emit(universityId);
+  onSelectUniversity(university: UniversityModel){
+    this.selectedUniversity=university;
+    this.onSelect.emit(university.id);
   }
 
 
+  getUniversityByCityId(university: UniversityModel) {
+    this.selectedUniversity = university;
+
+  }
 }

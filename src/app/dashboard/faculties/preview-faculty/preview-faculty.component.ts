@@ -11,6 +11,7 @@ import {MatDialog} from "@angular/material/dialog";
 export class PreviewFacultyComponent implements OnInit {
 
   @Input() faculty: CityModel | undefined;
+  university: any;
   constructor(private dialog: MatDialog) { }
 
   ngOnInit(): void {

@@ -1,15 +1,65 @@
-<mat-card class="card-container" *ngIf="faculty">
-  <img mat-card-image [src]="faculty.imageUrl" alt="Photo of a Shiba Inu">
-  <mat-card-header>
-    <mat-card-title>{{ faculty.name }}</mat-card-title>
-      </mat-card-header>
-  <mat-card-content>
-    <p>
-      {{ faculty.description }}
-    </p>
-    <p>
-      Contact Number: {{ faculty.contactNumber }}
-    </p>
-  </mat-card-content>
-</mat-card>
+<!--<mat-card class="card-container" *ngIf="faculty">-->
+<!--  <img mat-card-image [src]="faculty.imageUrl">-->
+<!--  <mat-card-header>-->
+<!--    <mat-card-title>{{ faculty.name }}</mat-card-title>-->
+<!--      </mat-card-header>-->
+<!--  <mat-card-content>-->
+<!--    <p>-->
+<!--      {{ faculty.description }}-->
+<!--    </p>-->
+<!--    <p>-->
+<!--      Contact Number: {{ faculty.contactNumber }}-->
+<!--    </p>-->
+<!--  </mat-card-content>-->
+<!--</mat-card>-->
+
+<html>
+<head>
+  <style>
+    ol {
+      background: #ff9999;
+      padding: 20px;
+    }
+
+    ul {
+      background: olivedrab;
+      padding: 20px;
+      font-size: 20px;
+    }
+
+    ol li {
+      background: #ffe5e5;
+      padding: 5px;
+      margin-left: 35px;
+    }
+
+    ul li {
+      background: cornsilk;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+
+
+<!--<ol *ngIf="university">-->
+<!--  <li>{{university.name}}</li>-->
+
+<!--</ol>-->
+
+<ul *ngIf="faculty">
+  <li>{{faculty.name}}</li>
+  <img src="{{faculty.imageUrl}}"/>
+
+</ul>
+
+</body>
+</html>
+
+
+
+
+
+
+
 

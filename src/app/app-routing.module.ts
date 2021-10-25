@@ -11,6 +11,7 @@ import {AddEditDeleteUniversityComponent} from "./dashboard/universities/add-edi
 import {AddEditDeleteCityComponent} from "./dashboard/universities/add-edit-delete-university/add-edit-delete-city/add-edit-delete-city.component";
 import {PreviewUniversityComponent} from "./dashboard/universities/preview-university/preview-university.component";
 import {NavigationToolbarComponent} from "./navigation-toolbar/navigation-toolbar.component";
+import {ListFacultyComponent} from "./dashboard/faculties/list-faculties/list-faculty.component";
 
 const routes: Routes = [
   {path: '', redirectTo: "/home", pathMatch: "full",},
@@ -20,7 +21,10 @@ const routes: Routes = [
   {path: "dashboard", component: DashboardComponent},
   {path: "my-account", component: MyAccountComponent},
   {path: "home", component: HomeComponent},
-  {path: "Cluj", component: ListUniversitiesComponent}
+  {path: "university-preview", component: ListUniversitiesComponent},
+  {path: "add-city", component: AddEditDeleteUniversityComponent},
+  {path: "faculties-preview", component: ListFacultyComponent}
+
 ];
 
 @NgModule({

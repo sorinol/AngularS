@@ -1,7 +1,28 @@
-<div class="list-container">
-  <app-preview-university *ngFor="let university of universities" [university]="university"
-                          (click)="onSelectUniversity(university.id)">
 
-  </app-preview-university>
-</div>
+
+
+<section class="back" >
+
+
+  <header class="header">
+    <a>UNIVERSITIES</a>
+  </header>
+
+  <div class="list-container">
+    <app-preview-university *ngFor="let university of universities" [university]="university"
+                            (click)="onSelectUniversity(university)">
+
+    </app-preview-university>
+
+    <span class="example-spacer"></span>
+  </div>
+
+  <div class="article"  *ngIf="selectedUniversity" >
+    <h1>{{selectedUniversity.name}}</h1>
+    <p>{{selectedUniversity.description}}</p>
+    <img src="{{selectedUniversity.image}}"/>
+  </div>
+
+</section>
+
 

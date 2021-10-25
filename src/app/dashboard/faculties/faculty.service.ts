@@ -33,9 +33,9 @@ export class FacultyService {
     return this.http.delete(`${environment.apiUrl}/faculties/deleteFaculty/${facultyId}`);
   }
 
-  public get() {
+  public getFacultyByUniversityId(universityId: number) {
 
-    return this.http.get(`${environment.apiUrl}/faculties/getFaculties`);
+    return this.http.get(`${environment.apiUrl}/faculties/getFacultiesByUniversityId/${universityId}`);
   }
 
   public getById(facultyId: number) {

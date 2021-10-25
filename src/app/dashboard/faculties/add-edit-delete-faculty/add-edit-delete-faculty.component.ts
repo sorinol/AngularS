@@ -4,6 +4,7 @@ import {CityModel} from "../../../models/faculty-model";
 import {FacultyService} from "../faculty.service";
 import {UniversityService} from "../../universities/university.service";
 import {UniversityModel} from "../../../models/university-model";
+import {DashboardComponent} from "../../dashboard.component";
 
 @Component({
   selector: 'app-add-edit-delete-faculty',
@@ -19,6 +20,8 @@ export class AddEditDeleteFacultyComponent implements OnInit, OnChanges {
   constructor(private formBuilder: FormBuilder,
               private facultyService: FacultyService,
               private universityService: UniversityService) {
+
+
     this.form = formBuilder.group({
       id: [null],
       imageUrl: ['', Validators.compose([Validators.required, Validators.minLength(1)])],
@@ -32,7 +35,8 @@ export class AddEditDeleteFacultyComponent implements OnInit, OnChanges {
 
   ngOnInit(): void {
     this.setupForm();
-    this.universityService.get().subscribe((response: any) => {
+
+    this.universityService.getByCityId(1).subscribe((response: any) => {
         this.universities = response;
       },
       (error) => {

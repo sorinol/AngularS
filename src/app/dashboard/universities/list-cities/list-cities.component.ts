@@ -53,14 +53,6 @@ export class ListCitiesComponent implements OnInit {
 
   }
 
-  btnClickCluj(){
-    this.router.navigateByUrl("/Cluj");
-  }
-
-  btnClickBucuresti(){
-    this.router.navigateByUrl("/altceva");
-  }
-
   onSelectUniversity(id: number) {
     this.onSelect.emit(id);
     this.router.navigateByUrl("/university")
@@ -69,6 +61,8 @@ export class ListCitiesComponent implements OnInit {
   // isLoggedIn() {
   //   this.isAuthenticated = this.authService.isLoggedIn();
   // }
+  universities: any;
+  selectedUniversity: any;
 
 
 
